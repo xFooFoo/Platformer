@@ -1,0 +1,92 @@
+[gd_scene load_steps=5 format=3 uid="uid://or2bpeluut57"]
+
+[ext_resource type="Script" path="res://BG.gd" id="1_n1gut"]
+[ext_resource type="Texture2D" uid="uid://bhflvrcna3i3v" path="res://sunny-land/assets/environment/back.png" id="2_nc780"]
+[ext_resource type="Texture2D" uid="uid://dbvko7fl2jkak" path="res://Sunny-land-files/Graphical Assets/environment/Props/house.png" id="3_6aar7"]
+[ext_resource type="Texture2D" uid="uid://cdnplrr2omapg" path="res://sunny-land/assets/environment/middle.png" id="3_s1x8s"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_n1gut")
+
+[node name="Sky" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1144, 0)
+
+[node name="Back" type="Sprite2D" parent="Sky"]
+position = Vector2(576, 323.5)
+scale = Vector2(3, 2.69583)
+texture = ExtResource("2_nc780")
+metadata/_edit_lock_ = true
+
+[node name="Houses" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(1144, 0)
+
+[node name="House" type="Sprite2D" parent="Houses"]
+position = Vector2(184, 324)
+texture = ExtResource("3_6aar7")
+
+[node name="House2" type="Sprite2D" parent="Houses"]
+position = Vector2(355, 331)
+texture = ExtResource("3_6aar7")
+
+[node name="House6" type="Sprite2D" parent="Houses"]
+position = Vector2(987, 350)
+texture = ExtResource("3_6aar7")
+
+[node name="House3" type="Sprite2D" parent="Houses"]
+position = Vector2(536, 344)
+texture = ExtResource("3_6aar7")
+
+[node name="House4" type="Sprite2D" parent="Houses"]
+position = Vector2(692, 320)
+texture = ExtResource("3_6aar7")
+
+[node name="House5" type="Sprite2D" parent="Houses"]
+position = Vector2(819, 354)
+texture = ExtResource("3_6aar7")
+
+[node name="Grass Floor" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1144, 0)
+
+[node name="Middle" type="Sprite2D" parent="Grass Floor"]
+position = Vector2(88, 485.5)
+scale = Vector2(1, 1.1875)
+texture = ExtResource("3_s1x8s")
+metadata/_edit_lock_ = true
+
+[node name="Middle2" type="Sprite2D" parent="Grass Floor"]
+position = Vector2(257, 484.25)
+scale = Vector2(1, 1.22147)
+texture = ExtResource("3_s1x8s")
+metadata/_edit_lock_ = true
+
+[node name="Middle3" type="Sprite2D" parent="Grass Floor"]
+position = Vector2(433, 490.75)
+scale = Vector2(1, 1.24592)
+texture = ExtResource("3_s1x8s")
+metadata/_edit_lock_ = true
+
+[node name="Middle4" type="Sprite2D" parent="Grass Floor"]
+position = Vector2(602, 480.5)
+scale = Vector2(1, 1.23098)
+texture = ExtResource("3_s1x8s")
+metadata/_edit_lock_ = true
+
+[node name="Middle5" type="Sprite2D" parent="Grass Floor"]
+position = Vector2(733, 517)
+scale = Vector2(1, 1.1875)
+texture = ExtResource("3_s1x8s")
+metadata/_edit_lock_ = true
+
+[node name="Middle6" type="Sprite2D" parent="Grass Floor"]
+position = Vector2(902, 509.5)
+scale = Vector2(1, 1.1875)
+texture = ExtResource("3_s1x8s")
+metadata/_edit_lock_ = true
+
+[node name="Middle7" type="Sprite2D" parent="Grass Floor"]
+position = Vector2(1063.5, 506)
+scale = Vector2(1.00568, 1.1875)
+texture = ExtResource("3_s1x8s")
+metadata/_edit_lock_ = true
